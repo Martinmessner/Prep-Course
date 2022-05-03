@@ -4,10 +4,10 @@
 const nuevaString = "Holis que onda";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = "24";
+const nuevoNum = 2;
 
 // Crea una variable booleana:
-const nuevoBool = "true";
+const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 4.2;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -28,33 +28,34 @@ const nuevoModulo = 21 % 5 === 4.2;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-    return str
+    
+    return (str);
 }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-    return x + y
+    return x + y;
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return x - y
+  return x - y;
 }
 
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-    return x * y
+    return x * y;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-    return x / y
+    return x / y;
 }
 
 function sonIguales(x, y) {
@@ -91,22 +92,21 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ( num > 90){ return true}
-  else return false
+    return num > 50;
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return x % y
+  return x % y;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0){
-    return "par"
+  if (num % 2 === 0){
+    return "true"
   } else {
     return false
   }
@@ -116,8 +116,8 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 1){
-    return "impar"
+  if (num % 2 === 1){
+    return "true"
   } else {
     return false
   }
@@ -127,27 +127,27 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return Math.pow(num, 2)
+  return Math.pow(num, 2);
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return Math.pow(num, 3)
+  return num * num * num;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  Math.pow(num ** exponent)
-  return Math.pow(2,6)
+  return Math.pow(num, exponent);
+  
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.round(num)
-  
+   Math.random(num);
+      return num;
 }
 
 function redondearHaciaArriba(num) {
