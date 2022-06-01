@@ -26,11 +26,16 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  let contador = 0;
+
+ const tomateee = numeros.reduce(function (acc,elemento){
+    return acc + elemento;
+  },0)
+      cb (tomateee)  ;
+  /* let contador = 0;
   for (i = 0; i < numeros.length; i++){
     contador += numeros[i]
   }
-  cb (contador);      // pasar a REDUCE
+  cb (contador);  */    // pasar a REDUCE
 }
 
 function forEach(array, cb) {
@@ -48,7 +53,7 @@ function map(array, cb) {
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
   const tomate = array.map(function (tomates) {
-    return(tomates * tomates);
+    return cb(tomates);
 
   })
   return tomate
@@ -58,10 +63,15 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  const pepino = array.filter()
-
+  var nuevoArray = [];
+  for(let i = 0; i<array.length; i++) {
+    if(array[i][0] === "a") {
+      nuevoArray.push(array[i])
+    }
   }
-      
+  return nuevoArray;
+}
+     
        
   
 
